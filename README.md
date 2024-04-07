@@ -20,6 +20,12 @@ This repository is set up fro current and future study and exploration of Azure 
 - [Connect Azure Functions to Azure Cosmos DB using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?pivots%3Dprogramming-language-csharp%26tabs%3Disolated-process%2Cv1)
 - [Connect Azure Functions to Azure Storage using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code?pivots%3Dprogramming-language-csharp%26tabs%3Disolated-process%2Cv1)
 
+
+#### Videos
+
+- [Video Practical](https://youtu.be/29jeJ2N9DGY) - Write to Azure Storage Queue to Table Storage.
+
+
 ### Other Practicals
 
 - [Create triggers and bindings](https://learn.microsoft.com/en-us/training/modules/develop-azure-functions/3-create-triggers-bindings)
