@@ -1,0 +1,99 @@
+@startmindmap "Anatomy of an Azure Function App"
+
+title Anatomy of an Azure Function App
+footer Triggers, bindings, outputs
+
+<style>
+    mindMapDiagram {
+        .root {
+            BackgroundColor darkblue
+            LineColor black
+            FontColor white
+        }
+
+        node {
+            FontColor white
+            LineColor black
+            BackgroundColor black
+            Shadowing 2.0
+            RoundCorner 25
+        }
+        :depth(0) {
+            FontColor black
+            LineColor white
+            BackgroundColor white
+            Shadowing 0.0
+        }
+        :depth(1) {
+            FontColor black
+            BackgroundColor darkgrey
+            Shadowing 2.0
+        }
+
+        arrow {
+            LineStyle 4
+            LineThickness 0.5
+            LineColor green
+        }
+
+        boxless {
+            FontColor black
+            Margin 10
+            Padding 10
+            MaximumWidth 400
+        }
+    }
+</style>
+
++ The Azure Function <<root>>
+
+++ function.json
++++_ auto generated via annotations\nin compiled languages
+++++ C#
+++++ Java
+++++_ cannot... be edited in Portal
++++_ manually implemented
+++++ Trigger
++++++_ Only one supported
++++++_ Timer, HTTP, Queues, Cosmos DB events, etc.
+
+++++ Bindings
++++++_ dataType, type (httpTrigger), name, direction (in, out, inout)
+++++_ when using
++++++ JavaScript
++++++ PowerShell
++++++ Python
++++++ TypeScript
++++++ C# scripting
+++++_ in the portal
++++++_ Portal UI Integration Tab
++++++_ Edit directly in Portal Code + Test
+
+++ hosts.json
++++_ Function App (host-level)\nConfiguration
+
+++_ A single
++++ Trigger
+++++_ with or without payload data
+
+++_ One or more optional
++++ Bindings
+++++ Inputs
++++++ parameters
++++++_ strings
++++++_ bytes array
++++++_ binary
++++++_ deserialized to custom objects
+++++ Outputs
++++++_ function return value
+
+++ Services
++++_ connect through
+++++ Environment Variables
++++++ Application Settings
++++++ Local Settings (appsettings.json)
+++++ Managed Identity
++++++_ not supported by
+++++++ Durable Functions
+
+@endmindmap
