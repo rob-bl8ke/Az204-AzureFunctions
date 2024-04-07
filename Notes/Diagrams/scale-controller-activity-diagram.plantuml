@@ -1,0 +1,25 @@
+@startuml "The Scale Controller - Scaling out and scaling based on heuristics"
+
+title "The Scale Controller - Scaling out and scaling based on heuristics"
+start
+
+:Monitor event rates;
+if (Event rates exceed threshold?) then (yes)
+  :Scale resources up;
+  if (Trigger type == Azure Queue storage) then (yes)
+    :Scale based on queue length and age of oldest message;
+  elseif (Trigger type == HTTP) then (yes)
+    :Allocate new instances once per second;
+  else (no)
+    :Allocate new instances once every 30 seconds;
+  endif
+else (no)
+  :Scale resources down;
+  if (No functions running within app?) then (yes)
+    :Scale in to zero instances;
+  endif
+endif
+
+stop
+
+@enduml

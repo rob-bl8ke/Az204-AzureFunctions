@@ -1,0 +1,7 @@
+{
+    "[plantuml]": {
+        "editor.quickSuggestions": {
+            "other": "off"
+        }
+    }
+}

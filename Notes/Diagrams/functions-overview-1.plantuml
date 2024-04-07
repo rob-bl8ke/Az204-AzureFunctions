@@ -1,0 +1,38 @@
+@startmindmap "Functions Overview"
+
+title "Functions Overview"
+
++ Azure Functions
+++ logically organized\nAzure Function App
++++ Std SKU storage account
+++++_ Supports Azure Blob, Queue,\nFiles, and Table storage
++++_ funcs deployed, scaled, and\nmanaged in single function host instance
++++ Function\n(Templates)
+++++_ Http Triggered
+++++_ Timer Triggered
+++++_ Events, service queues and busses,\nCosmos DB and Blob Storage,\nEvent Grid and Event Hub
+++ Runtimes
++++_ .Net, Java (compiled)
+++++_ config generated
++++_ .Node.js, PowerShell, Python
+++++_ requires function.json
++++_ Custom Handler (GO, Ruby, PHP, Rust)\(nunsupported)
+-- Plans
+--- Consumption Plan (Serverless)
+----_ Cold starts but scales automatically
+----_ Billed on no., duration, memory\nof executions
+--- Premium Plan
+----_ Pre-warmed (yet auto scales)\nalways running to react instantly
+----_ Billed for warmed instances + scaling out
+----_ Runs on more powerful instances
+----_ Can connect to virtual networks
+--- Dedicated Plan (App Service Plan)
+----_ VM Sharing
+----_ Reuse existing, underutilized VMs
+----_ Best for long-running scenarios\nwhere durable functions can't be used.
+----_ Enable "Always On"
+
+-- Alternate Hosting
+---_ App Service Environment (ASE)
+---_ Kubernetes (KEDA)
+@endmindmap

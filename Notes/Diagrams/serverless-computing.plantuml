@@ -1,0 +1,30 @@
+@startmindmap "Serverless Cloud Computing"
+
+title "Serverless Cloud Computing"
+
++ Serverless\nCloud Computing
+++ Azure Functions
++++ **Serverless Compute Service**
++++_ Use when demand is variable or \nrequires trigger (event driven)
++++ Durable Functions
+++++_ Can perform <b>orchestration tasks</b>\nby chaining functions together and maintaining state
++++ Programming in mind...
++++_ priced according to no. and run time of executions
+++ Azure Logic Apps
++++ **Serverless Orchestration Service**
++++_ Low code/no code with a\nfocus on automation an orchestration of tasks
++++_ Visually link triggers to actions with library\nof connectors in a designer
++++ Workflow in mind...
++++_ priced according to no. of executions and type of connectors
+-- Focus on...
+---_ Business function
+---_ Managed infrastructure
+---_ Scaled automatically
+---_ Don't need to worry about outages
+---_ Only pay for what you execute
+-- [ **Not Serverless** ]\nAzure App Service\nWebJobs
+---_ Base on which Azure Functions\nare built (WebJobs SDK)
+---_  Azure Functions provide more\noptions and better developer productivity.
+
+
+@endmindmap
