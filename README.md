@@ -14,7 +14,7 @@ This repository is set up fro current and future study and exploration of Azure 
 
 ### Full Labs
 
-- [Exercise: Create an Azure Function by using Visual Studio Code](https://learn.microsoft.com/en-us/training/modules/develop-azure-functions/5-create-function-visual-studio-code)
+- [Exercise: Create an Azure Function by using Visual Studio Code](https://learn.microsoft.com/en-us/training/modules/develop-azure-functions/5-create-function-visual-studio-code) - Creates a simple HTTP trigger function in VS Code using the recommended extensions to log in and connect to Azure, as well as managing your FunctionApp resources. You develop localy, deploy to Azure and run your Function App from Visual Studio Code. The function simply echoes the name you supply to it as a query parameter.
 - [Lab 02: Implement task processing logic by using Azure Functions](https://microsoftlearning.github.io/AZ-204-DevelopingSolutionsforMicrosoftAzure/Instructions/Labs/AZ-204_lab_02.html)
 - [Quickstart: Create a C# function in Azure using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp)
 - [Connect Azure Functions to Azure Cosmos DB using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?pivots%3Dprogramming-language-csharp%26tabs%3Disolated-process%2Cv1)

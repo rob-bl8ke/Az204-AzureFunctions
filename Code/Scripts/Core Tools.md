@@ -1,6 +1,6 @@
 # Azure Functions Core Tools.
 
-When creating a local function app and adding functions to it you’ll have to use Azure Functions Core Tools.
+When creating a local function app and adding functions to it you’ll have to use [Azure Functions Core Tools](https://www.npmjs.com/package/azure-functions-core-tools).
 
 - `Get-Command New-AzFunc`.
 - `func start` will start your function for debugging.
@@ -18,6 +18,7 @@ npm install -u -g azure-functions-core-tools@3
 npm list -g # deprecated
 npm list --location=global
 ```
+> Azure Functions Core Tools can also be installed with choco, winget, and brew.
 
 ### PowerShell
 

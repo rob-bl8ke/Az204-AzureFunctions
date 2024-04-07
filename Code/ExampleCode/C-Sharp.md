@@ -1,6 +1,7 @@
 # C#
 
 ### C# Script
+- [Source](https://learn.microsoft.com/en-us/training/modules/develop-azure-functions/3-create-triggers-bindings)
 
 ```csharp
 using Microsoft.Extensions.Logging;
@@ -19,7 +20,15 @@ public static Person Run(JObject order, ILogger log)
     };
 }
 ```
+- In this case, bindings are defined in `function.json` as this is a **C# scripting implementation**.
+- Incoming queue message is a JSON object.
+- Incoming parameter `order` must perfectly match the name of the trigger in `function.json`.
+- Return value creates a new role in Table storage.
+
 ### C# Class Library
+
+- This is a compiled Queue triggered C# function.
+- Triggers, input, and output bindings are specified in attributes instead of a `function.json` file.
 
 ```csharp
 public static class QueueTriggerTableOutput
@@ -38,6 +47,9 @@ public static class QueueTriggerTableOutput
     }
 }
 ```
+- Here is another example. This time the function is an HTTP triggered function.
+- Note the similarity to how `WebApi` returns an HTTP result.
+- Trigger is defined as a function attribute.
 
 ```csharp
 using System;
@@ -76,8 +88,9 @@ namespace functions_netcore
     }
 }
 ```
+- [Azure Functions HTTP triggers and bindings overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook?tabs=isolated-process%2Cfunctionsv2&pivots=programming-language-csharp)
 
-## Trigger Function
+### Timer Triggered Function
 
 ```csharp
 using System;
@@ -85,7 +98,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 
-namespace _06
+namespace functions_netcore
 {
     public class csharpfunc
     {
@@ -98,3 +111,10 @@ namespace _06
 }
 
 ```
+
+- [Timer trigger for Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer?tabs=python-v2%2Cisolated-process%2Cnodejs-v4&pivots=programming-language-csharp) demonstrates further with information on how use NCRONTAB expressions.
+
+### Also see...
+
+- [Azure Blob storage bindings for Azure Functions overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob?tabs=isolated-process%2Cextensionv5%2Cextensionv3&pivots=programming-language-csharp)
+- [Azure Cosmos DB trigger and bindings for Azure Functions 2.x and higher overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2?tabs=isolated-process%2Cextensionv4&pivots=programming-language-csharp)
