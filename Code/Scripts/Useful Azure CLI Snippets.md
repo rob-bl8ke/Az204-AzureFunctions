@@ -3,12 +3,12 @@
 
 ```bash
 # Create a random key
-myKeyVault=robazkeyvlttest-$RANDOM
+myKeyVault=...keyvlttest-$RANDOM
 
 az login
 
 # List resource groups that contain...
-az group list --query "[?contains(name, 'rob')].{ name: name, id: id }"
+az group list --query "[?contains(name, '...')].{ name: name, id: id }"
 
 myLocation=eastus
 az group create --name az204-vault-rg34 --location $myLocation

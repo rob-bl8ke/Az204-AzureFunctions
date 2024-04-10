@@ -13,21 +13,21 @@ Disconnect-AzAccount
 Get-Content csharpfunc.cs
 
 # Create resource group and required standard SKU storage account
-New-AzResourceGroup -Name robazresourcegroup -Location southafricanorth
-Get-AzResource -ResourceGroupName robazresourcegroup | Format-Table
-Get-AzResource -Name robazfuncappstorage -ResourceGroupName robazresourcegroup
+New-AzResourceGroup -Name ...resourcegroup -Location southafricanorth
+Get-AzResource -ResourceGroupName ...resourcegroup | Format-Table
+Get-AzResource -Name ...funcappstorage -ResourceGroupName ...resourcegroup
 
 Get-AzLocation | Format-Table Location, DisplayName
 Get-AzLocation | Where-Object { $_.DisplayName -like "Canada" } | Format-Table Location, DisplayName
 
 # Delete
-Remove-AzResourceGroup -Name robazresourcegroup
+Remove-AzResourceGroup -Name ...resourcegroup
 ```
 
 ```PowerShell
 Get-Content .\typescriptfunc\index.ts
-Get-AzResource -ResourceGroupName robazresourcegroup | Format-Table
-Get-AzResource -Name robazfuncappstorage -ResourceGroupName robazresourcegroup
+Get-AzResource -ResourceGroupName ...resourcegroup | Format-Table
+Get-AzResource -Name ...funcappstorage -ResourceGroupName ...resourcegroup
 ```
 
 - [PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/azure/?view=azps-10.0.0&viewFallbackFrom=azps-9.6.0)

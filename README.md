@@ -1,6 +1,6 @@
 # Azure Function Study (focus on AZ-204)
 
-This repository is set up fro current and future study and exploration of Azure Functions (AZ-204).
+This repository is set up for current and future study and exploration of Azure Functions (AZ-204).
 - [Official Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/)
 
 # Sample Code
@@ -30,6 +30,9 @@ This repository is set up fro current and future study and exploration of Azure 
 
 - [Create triggers and bindings](https://learn.microsoft.com/en-us/training/modules/develop-azure-functions/3-create-triggers-bindings)
 
+# References
+
+- [Use Environment Variables with PowerShell](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.3)
 
 # Useful Visual Studio Extensions
 
