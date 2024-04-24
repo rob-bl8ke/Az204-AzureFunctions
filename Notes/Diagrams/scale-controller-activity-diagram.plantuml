@@ -1,4 +1,13 @@
-@startuml "The Scale Controller - Scaling out and scaling based on heuristics"
+@startuml "The Scale Controller - Scaling out and scaling in based on heuristics"
+
+' List of available themes:
+' https://plantuml.com/theme
+!theme sketchy
+'!theme carbon-gray
+'!theme cyborg
+'!theme mars
+' skinparam backgroundColor #e8edec
+skinparam backgroundColor #969998
 
 title "The Scale Controller - Scaling out and scaling based on heuristics"
 start
