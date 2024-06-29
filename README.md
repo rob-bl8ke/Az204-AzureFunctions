@@ -23,6 +23,7 @@ This repository is set up for current and future study and exploration of Azure 
 
 #### Videos
 
+- [Azure Functions (Atmosphera)](https://www.youtube.com/watch?v=OsDL_ZMIaCA&list=PLcGfCK-5BExR7YQKHMr72FXtdDTxaF__9&index=15) - An hour's webinar on Azure Functions (FunctionsApp) which covers Durable functions.
 - [Video Practical](https://youtu.be/29jeJ2N9DGY) - Write to Azure Storage Queue to Table Storage.
 
 

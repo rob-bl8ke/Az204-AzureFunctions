@@ -23,9 +23,11 @@ if (Event rates exceed threshold?) then (yes)
     :Allocate new instances once every 30 seconds;
   endif
 else (no)
-  :Scale resources down;
-  if (No functions running within app?) then (yes)
-    :Scale in to zero instances;
+  if (Event rates noticably down) then (yes)
+    :Scale resources down;
+    if (No functions running within app?) then (yes)
+      :Scale in to zero instances;
+    endif
   endif
 endif
 
